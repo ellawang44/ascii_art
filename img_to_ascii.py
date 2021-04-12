@@ -30,6 +30,10 @@ def img_to_ascii(
         The image converted to ascii art. 
     '''
     
+    if components > len(ascii_str):
+        raise ValueError('ascii_str is not long enough for the number of 
+                         components specified.')
+    
     # resize image
     image = Image.open(path_to_image)
     horig, vorig = image.size
