@@ -31,8 +31,9 @@ def img_to_ascii(
     '''
     
     if components > len(ascii_str):
-        raise ValueError('ascii_str is not long enough for the number of 
-                         components specified.')
+        raise ValueError(
+            'ascii_str is not long enough for the number of components specified.'
+        )
     
     # resize image
     image = Image.open(path_to_image)
