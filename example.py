@@ -1,4 +1,4 @@
-from img_to_ascii import *
+from image_manip import *
 
 print(img_to_ascii('fringes_cutout.png', resize=(150, None)))
 
